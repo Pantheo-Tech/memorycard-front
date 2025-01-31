@@ -21,6 +21,7 @@ export default {
         gradientRedToLight: "linear-gradient(to right, #EE4D50, #edaaab)",
         gradientRedToBlack: "linear-gradient(to right, #EE4D50, #000)",
         gradientBlackToRed: "linear-gradient(to right, #000, #EE4D50)",
+        "bg-footer": "url('../../src/assets/img/background-footer.png')",
       },
     },
   },
