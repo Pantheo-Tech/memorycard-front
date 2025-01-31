@@ -21,7 +21,7 @@ const Header = () => {
           </li>
         </ul>
       </nav>
-      <Button title="Acessar" />
+      <Button title="Acessar" height="34px" width="142px" />
     </header>
   );
 }

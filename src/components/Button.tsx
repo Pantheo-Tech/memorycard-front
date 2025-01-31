@@ -1,9 +1,18 @@
-interface ButtonProps {
-  title: string; // Define que title é do tipo string
-}
+type ButtonProps = {
+  title: string;
+  height?: string;
+  width?: string;
+};
 
-const Button: React.FC<ButtonProps> = ({ title }) => {
-  return <button className="bg-red rounded-md px-4 py-1 text-sm font-normal">{title}</button>;
+const Button = ({ title, height = "34px", width = "142px" }: ButtonProps) => {
+  return (
+    <div
+      className="bg-red text-sm text-primaryText rounded-lg cursor-pointer flex justify-center items-center"
+      style={{ height, width }}
+    >
+      {title}
+    </div>
+  );
 };
 
 export default Button;
