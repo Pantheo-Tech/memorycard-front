@@ -2,9 +2,9 @@ type HeroSectionTitleProps = {
   title: string;
 };
 
-const HeroSectionTitle = ({ title }: HeroSectionTitleProps) => {
+const SectionTitle = ({ title }: HeroSectionTitleProps) => {
   return (
-    <div className="flex justify-center items-center gap-1 font-ubuntu font-bold text-4xl md:text-[64px] text-center p-10 relative z-10">
+    <div className="flex justify-center items-center gap-1 font-ubuntu font-bold text-xl sm:text-4xl md:text-[50px] text-center p-10 relative z-10 md:leading-[75px]">
       <span className="block bg-gradientBlackToRed h-[2px] w-[80px] relative z-10"></span>
       <span className="bg-gradientRedToLight bg-clip-text text-transparent">
         {title}
@@ -14,4 +14,4 @@ const HeroSectionTitle = ({ title }: HeroSectionTitleProps) => {
   );
 };
 
-export default HeroSectionTitle;
+export default SectionTitle;
