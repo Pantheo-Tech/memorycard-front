@@ -8,16 +8,24 @@ const Header = () => {
       <nav className="font-jomolhari">
         <ul className="flex gap-8">
           <li>
-            <a href="/">Home</a>
+            <a href="/" className="hover:opacity-50">
+              Home
+            </a>
           </li>
           <li>
-            <a href="/about">Sobre</a>
+            <a href="/about" className="hover:opacity-50">
+              Sobre
+            </a>
           </li>
           <li>
-            <a href="/games">Jogos</a>
+            <a href="/games" className="hover:opacity-50">
+              Jogos
+            </a>
           </li>
           <li>
-            <a href="/faqs">FAQs</a>
+            <a href="/faqs" className="hover:opacity-50">
+              FAQs
+            </a>
           </li>
         </ul>
       </nav>

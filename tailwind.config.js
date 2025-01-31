@@ -10,6 +10,7 @@ export default {
       colors: {
         background: "var(--background)",
         red: "var(--red)",
+        buttonHover: "var(--button-hover)",
       },
       textColor: {
         primaryText: "var(--primary-text)",
