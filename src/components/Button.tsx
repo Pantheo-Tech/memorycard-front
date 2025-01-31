@@ -7,7 +7,7 @@ type ButtonProps = {
 const Button = ({ title, height = "34px", width = "142px" }: ButtonProps) => {
   return (
     <div
-      className="bg-red text-sm text-primaryText rounded-lg cursor-pointer flex justify-center items-center"
+      className="bg-red font-inter text-sm text-primaryText rounded-lg cursor-pointer flex justify-center items-center"
       style={{ height, width }}
     >
       {title}

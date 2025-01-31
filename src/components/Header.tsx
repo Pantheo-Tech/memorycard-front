@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <header className="flex justify-between items-center bg-transparent text-primaryText text-xl relative z-10 p-10">
       <h1>Logo Aqui</h1>
-      <nav>
+      <nav className="font-jomolhari">
         <ul className="flex gap-8">
           <li>
             <a href="/">Home</a>
