@@ -3,10 +3,10 @@ import Button from "./Button";
 
 const Header = () => {
   return (
-    <header className="flex justify-between items-center bg-transparent text-primaryText sm:text-xl relative z-10 p-10">
+    <header className="flex justify-between items-center bg-transparent text-primaryText sm:text-xl relative z-10 py-10 px-10 md:px-20">
       <p>Logo Aqui</p>
       <nav className="font-jomolhari">
-        <ul className="flex gap-8">
+        <ul className="flex gap-8 md:gap-[50px]">
           <li>
             <a href="/" className="hover:opacity-50">
               Home
