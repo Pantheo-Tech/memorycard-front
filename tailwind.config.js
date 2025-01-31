@@ -7,6 +7,7 @@ export default {
         inter: ["Inter", "sans-serif"],
         jomolhari: ["Jomolhari", "serif"],
         stalinist: ["Stalinist One", "cursive"],
+        ubuntu: ["Ubuntu", "sans-serif"],
       },
       colors: {
         background: "var(--background)",
@@ -16,8 +17,12 @@ export default {
       textColor: {
         primaryText: "var(--primary-text)",
       },
+      backgroundImage: {
+        gradientRedToLight: "linear-gradient(to right, #EE4D50, #edaaab)",
+        gradientRedToBlack: "linear-gradient(to right, #EE4D50, #000)",
+        gradientBlackToRed: "linear-gradient(to right, #000, #EE4D50)",
+      },
     },
   },
   plugins: [],
 };
-
