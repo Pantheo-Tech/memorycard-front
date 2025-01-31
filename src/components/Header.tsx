@@ -3,8 +3,8 @@ import Button from "./Button";
 
 const Header = () => {
   return (
-    <header className="flex justify-between items-center bg-transparent text-primaryText text-xl relative z-10 p-10">
-      <h1>Logo Aqui</h1>
+    <header className="flex justify-between items-center bg-transparent text-primaryText sm:text-xl relative z-10 p-10">
+      <p>Logo Aqui</p>
       <nav className="font-jomolhari">
         <ul className="flex gap-8">
           <li>
@@ -29,7 +29,7 @@ const Header = () => {
           </li>
         </ul>
       </nav>
-      <Button title="Acessar" height="34px" width="142px" />
+      <Button title="Acessar" className="h-[34px] w-[142px] text-[16px]"/>
     </header>
   );
 }

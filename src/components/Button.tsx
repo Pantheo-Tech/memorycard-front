@@ -1,17 +1,15 @@
 type ButtonProps = {
   title: string;
-  height?: string;
-  width?: string;
+  className?: string; // Permitir que as classes sejam passadas para o botão
 };
 
-const Button = ({ title, height = "34px", width = "142px" }: ButtonProps) => {
+const Button = ({ title, className }: ButtonProps) => {
   return (
-    <div
-      className="bg-red font-inter text-sm text-primaryText rounded-lg cursor-pointer flex justify-center items-center hover:bg-buttonHover"
-      style={{ height, width }}
+    <button
+      className={`bg-red text-sm text-primaryText rounded-md cursor-pointer flex justify-center items-center ${className} hover:bg-buttonHover`}
     >
       {title}
-    </div>
+    </button>
   );
 };
 

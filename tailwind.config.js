@@ -6,6 +6,7 @@ export default {
       fontFamily: {
         inter: ["Inter", "sans-serif"],
         jomolhari: ["Jomolhari", "serif"],
+        stalinist: ["Stalinist One", "cursive"],
       },
       colors: {
         background: "var(--background)",
