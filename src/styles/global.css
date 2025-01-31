@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+:root {
+  --background: #111b2c;
+
+  --primary-text: #ffffff;
+}
+
+body {
+  color: var(--primary-text);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
