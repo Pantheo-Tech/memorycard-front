@@ -12,6 +12,7 @@ const LandingPage = () => {
         <SectionTitle title="Dicas Que Fazem a Diferença" />
         <SectionTitle title="Conquistas Que Contam a Sua História" />
         <SectionTitle title="Conecte-se e Compartilhe" />
+        <SectionTitle title="FAQs" />
       </div>
     </div>
   );
