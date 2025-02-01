@@ -1,5 +1,6 @@
 import TopSection from "../../components/landing-page/TopSection";
 import SectionTitle from "../../components/landing-page/SectionTitle";
+import Footer from "../../components/Footer";
 
 const LandingPage = () => {
   return (
@@ -22,6 +23,10 @@ const LandingPage = () => {
 
       <section>
         <SectionTitle title="Conecte-se e Compartilhe" />
+      </section>
+
+      <section>
+        <Footer />
       </section>
     </>
   );

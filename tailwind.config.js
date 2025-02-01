@@ -22,7 +22,7 @@ export default {
         gradientRedToBlack: "linear-gradient(to right, #EE4D50, #000)",
         gradientBlackToRed: "linear-gradient(to right, #000, #EE4D50)",
         radialGradient: "radial-gradient(circle, var(--tw-gradient-stops))",
-
+        "bg-footer": "url('../../src/assets/img/background-footer.png')",
       },
     },
   },
