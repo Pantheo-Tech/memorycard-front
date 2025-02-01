@@ -16,7 +16,7 @@ const Header = () => {
       <p>Logo Aqui</p>
 
       <button
-        className="md:hidden fixed top-6 right-6 z-50"
+        className="md:hidden absolute top-6 right-6 z-50"
         onClick={toggleMenu}
       >
         <img
