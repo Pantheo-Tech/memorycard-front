@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Button from "../Button";
-import iconMenuOpen from "../../assets/img/icon-menu.svg";
-import iconMenuClose from "../../assets/img/icon-menu-close.svg";
+import MenuCloseIcon from "./MenuCloseIcon";
+import MenuOpenIcon from "./MenuOpenIcon";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -28,14 +28,10 @@ const Header = () => {
       <p>Logo Aqui</p>
 
       <button
-        className="md:hidden absolute top-6 right-6 z-50"
+        className="md:hidden absolute top-9 right-6 z-50"
         onClick={toggleMenu}
       >
-        <img
-          src={isMenuOpen ? iconMenuClose : iconMenuOpen}
-          alt="Menu"
-          className="w-8 h-8"
-        />
+        {isMenuOpen ? <MenuCloseIcon /> : <MenuOpenIcon />}
       </button>
 
       <nav className="hidden md:block font-jomolhari">
@@ -83,12 +79,8 @@ const Header = () => {
               transition={{ duration: 0.4, ease: "easeInOut" }}
               className="fixed right-0 top-0 w-full h-full bg-background text-white flex flex-col items-center justify-center z-50"
             >
-              <button className="absolute top-6 right-6" onClick={toggleMenu}>
-                <img
-                  src={iconMenuClose}
-                  alt="Fechar Menu"
-                  className="w-8 h-8"
-                />
+              <button className="absolute top-9 right-6" onClick={toggleMenu}>
+                <MenuCloseIcon />
               </button>
 
               <nav className="text-xl space-y-6 font-jomolhari">
