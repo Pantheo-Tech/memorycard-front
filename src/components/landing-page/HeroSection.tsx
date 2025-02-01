@@ -4,7 +4,7 @@ const HeroSection = () => {
   return (
     <div className="flex flex-col justify-center items-center m-auto w-[80%] relative z-10 mt-20 md:mt-40 pb-10">
       <div>
-        <h1 className="font-stalinist text-2xl sm:text-3xl md:text-[35px] text-center leading-[40px] md:leading-[60px] mb-[45px]">
+        <h1 className="font-stalinist text-2xl sm:text-3xl md:text-[35px] text-center leading-[40px] md:leading-[60px] mb-[80px] md:mb-[100px]">
           MemoryCard: Guarde Cada Momento da Sua Jornada Gamer!
         </h1>
       </div>

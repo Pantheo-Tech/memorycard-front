@@ -3,9 +3,9 @@ import HeroSection from "./HeroSection";
 
 const TopSection = () => {
   return (
-    <div className="relative min-h-screen border-4 border-background">
+    <div className="relative z-0 min-h-screen border-4 border-background">
       <Background />
-      <div className="reltive z-10">
+      <div className="relative">
         <HeroSection />
       </div>
     </div>
