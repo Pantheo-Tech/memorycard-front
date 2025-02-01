@@ -1,9 +1,10 @@
 import background from "../../assets/img/background-landing-page.png";
+import Overlay from "./Overlay";
 
 const Background = () => {
   return (
     <div className="absolute top-0 left-0 w-full min-h-screen">
-      {" "}
+      <Overlay />
       {/* Garante que o background tenha no mínimo a altura da tela */}
       <img
         src={background}

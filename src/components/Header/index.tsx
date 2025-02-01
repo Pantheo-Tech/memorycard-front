@@ -1,5 +1,4 @@
-import { Link } from "react-router-dom"
-import Button from "./Button";
+import Button from "../Button";
 
 const Header = () => {
   return (
@@ -29,9 +28,9 @@ const Header = () => {
           </li>
         </ul>
       </nav>
-      <Button title="Acessar" className="h-[34px] w-[142px] text-[16px]"/>
+      <Button title="Acessar" className="h-[34px] w-[142px] text-[16px]" />
     </header>
   );
-}
+};
 
-export default Header
+export default Header;
