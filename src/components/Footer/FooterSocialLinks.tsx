@@ -1,35 +1,32 @@
-import instagramIcon from '../../assets/img/instagram-icon.png'
-import youTubeIcon from '../../assets/img/youtube-icon.png'
-import xIcon from '../../assets/img/x-icon.png'
-import facebookIcon from '../../assets/img/facebook-icon.png'
+import { Instagram, Youtube, Mail, Facebook } from "lucide-react";
 
 const FooterSocialLinks = () => {
   return (
     <nav>
       <ul className="flex gap-4">
         <li>
-          <a href="#">
-            <img className="h-6 w-6" src={instagramIcon} alt="" />
+          <a href="#" aria-label="Instagram">
+            <Mail size={24} className="text-white hover:text-gray-400" />
           </a>
         </li>
         <li>
-          <a href="#">
-            <img className="h-6 w-6" src={youTubeIcon} alt="" />
+          <a href="#" aria-label="YouTube">
+            <Youtube size={24} className="text-white hover:text-gray-400" />
           </a>
         </li>
         <li>
-          <a href="#">
-            <img className="h-6 w-6" src={xIcon} alt="" />
+          <a href="#" aria-label="Twitter">
+            <Instagram size={24} className="text-white hover:text-opacity-50" />
           </a>
         </li>
         <li>
-          <a href="#">
-            <img className="h-6 w-6" src={facebookIcon} alt="" />
+          <a href="#" aria-label="Facebook">
+            <Facebook size={24} className="text-white hover:text-gray-400" />
           </a>
         </li>
       </ul>
     </nav>
   );
-}
+};
 
-export default FooterSocialLinks
+export default FooterSocialLinks;
