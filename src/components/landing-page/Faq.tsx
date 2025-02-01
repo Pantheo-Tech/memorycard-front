@@ -43,6 +43,7 @@ const Faq = () => {
             />
           </dt>
           {openIndex === index && <dd>{faq.answer}</dd>}
+          <hr className="mt-4 opacity-30" />
         </div>
       ))}
     </dl>
