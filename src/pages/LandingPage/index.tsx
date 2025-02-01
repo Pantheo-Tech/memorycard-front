@@ -1,6 +1,7 @@
 import TopSection from "../../components/landing-page/TopSection";
 import SectionTitle from "../../components/landing-page/SectionTitle";
 import Footer from "../../components/Footer";
+import Faq from "../../components/landing-page/Faq";
 
 const LandingPage = () => {
   return (
@@ -27,6 +28,10 @@ const LandingPage = () => {
 
       <section>
         <SectionTitle title="FAQs" />
+      </section>
+
+      <section>
+        <Faq />
       </section>
 
       <section>
