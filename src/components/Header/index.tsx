@@ -46,17 +46,17 @@ const Header = () => {
             </a>
           </li>
           <li>
-            <a href="/about" className="hover:opacity-50">
+            <a href="#about" className="hover:opacity-50">
               Sobre
             </a>
           </li>
           <li>
-            <a href="/games" className="hover:opacity-50">
+            <a href="#games" className="hover:opacity-50">
               Jogos
             </a>
           </li>
           <li>
-            <a href="/faqs" className="hover:opacity-50">
+            <a href="#faqs" className="hover:opacity-50">
               FAQs
             </a>
           </li>
@@ -104,7 +104,7 @@ const Header = () => {
                   </li>
                   <li className="mb-2">
                     <a
-                      href="/about"
+                      href="#about"
                       className="hover:opacity-50"
                       onClick={toggleMenu}
                     >
@@ -113,7 +113,7 @@ const Header = () => {
                   </li>
                   <li className="mb-2">
                     <a
-                      href="/games"
+                      href="#games"
                       className="hover:opacity-50"
                       onClick={toggleMenu}
                     >
@@ -122,7 +122,7 @@ const Header = () => {
                   </li>
                   <li className="mb-5">
                     <a
-                      href="/faqs"
+                      href="#faqs"
                       className="hover:opacity-50"
                       onClick={toggleMenu}
                     >

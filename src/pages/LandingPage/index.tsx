@@ -26,6 +26,10 @@ const LandingPage = () => {
       </section>
 
       <section>
+        <SectionTitle title="FAQs" />
+      </section>
+
+      <section>
         <Footer />
       </section>
     </>
