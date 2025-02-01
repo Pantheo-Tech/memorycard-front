@@ -1,7 +1,7 @@
-import instagramIcon from '../assets/img/instagram-icon.png'
-import youTubeIcon from '../assets/img/youtube-icon.png'
-import xIcon from '../assets/img/x-icon.png'
-import facebookIcon from '../assets/img/facebook-icon.png'
+import instagramIcon from '../../assets/img/instagram-icon.png'
+import youTubeIcon from '../../assets/img/youtube-icon.png'
+import xIcon from '../../assets/img/x-icon.png'
+import facebookIcon from '../../assets/img/facebook-icon.png'
 
 const FooterSocialLinks = () => {
   return (

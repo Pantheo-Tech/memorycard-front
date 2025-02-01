@@ -1,5 +1,5 @@
-import FooterNav from "./FooterNav"
-import FooterSocialLinks from "./FooterSocialLinks"
+import FooterNav from "../Footer/FooterNav"
+import FooterSocialLinks from "../Footer/FooterSocialLinks"
 
 const FooterContent = () => {
   return (

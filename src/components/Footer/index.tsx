@@ -1,5 +1,5 @@
 import Button from "../Button";
-import FooterContent from "../FooterContent";
+import FooterContent from "../Footer/FooterContent";
 
 const Footer = () => {
   return (
