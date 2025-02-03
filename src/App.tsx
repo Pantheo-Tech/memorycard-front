@@ -1,12 +1,16 @@
-import './styles/global.css'
+import Header from "./components/Header";
+import LandingPage from "./pages/LandingPage";
+import "./styles/global.css";
 
 function App() {
-
   return (
     <>
-      <h1>Hello World!</h1>
+      <Header />
+      <main className="main">
+        <LandingPage />
+      </main>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
