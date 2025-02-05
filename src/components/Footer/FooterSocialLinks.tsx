@@ -1,6 +1,7 @@
 import { Instagram, Youtube, Mail, Facebook } from "lucide-react";
+import React from "react";
 
-const FooterSocialLinks = () => {
+const FooterSocialLinks: React.FC = () => {
   return (
     <nav>
       <ul className="flex gap-4">
