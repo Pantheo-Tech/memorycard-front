@@ -10,8 +10,16 @@ const LandingPage = () => {
         <TopSection />
       </section>
 
+      <section id="about">
+        <SectionTitle title="Sobre Nós" />
+      </section>
+
       <section>
         <SectionTitle title="Sua Biblioteca de Jogos, Organizada" />
+      </section>
+
+      <section id="games">
+        <SectionTitle title="Jogos Populares" />
       </section>
 
       <section>
@@ -26,7 +34,7 @@ const LandingPage = () => {
         <SectionTitle title="Conecte-se e Compartilhe" />
       </section>
 
-      <section>
+      <section id="faqs">
         <SectionTitle title="FAQs" />
       </section>
 
