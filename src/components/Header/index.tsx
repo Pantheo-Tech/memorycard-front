@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Link } from "react-scroll"; // Importe o Link do react-scroll
 import Button from "../Button";
 import MenuCloseIcon from "./MenuCloseIcon";
 import MenuOpenIcon from "./MenuOpenIcon";
@@ -37,24 +38,44 @@ const Header: React.FC = () => {
       <nav className="hidden md:block font-jomolhari">
         <ul className="flex gap-8 md:gap-[50px]">
           <li>
-            <a href="/" className="hover:opacity-50">
+            <Link
+              to="home"
+              smooth={true}
+              duration={500}
+              className="hover:opacity-50"
+            >
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#about" className="hover:opacity-50">
+            <Link
+              to="about"
+              smooth={true}
+              duration={500}
+              className="hover:opacity-50"
+            >
               Sobre
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#games" className="hover:opacity-50">
+            <Link
+              to="games"
+              smooth={true}
+              duration={500}
+              className="hover:opacity-50"
+            >
               Jogos
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#faqs" className="hover:opacity-50">
+            <Link
+              to="faqs"
+              smooth={true}
+              duration={500}
+              className="hover:opacity-50"
+            >
               FAQs
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>
@@ -86,40 +107,48 @@ const Header: React.FC = () => {
               <nav className="text-xl space-y-6 font-jomolhari">
                 <ul>
                   <li className="mb-2">
-                    <a
-                      href="/"
-                      className="hover:opacity-50"
+                    <Link
+                      to="home"
+                      smooth={true}
+                      duration={500}
                       onClick={toggleMenu}
+                      className="hover:opacity-50"
                     >
                       Home
-                    </a>
+                    </Link>
                   </li>
                   <li className="mb-2">
-                    <a
-                      href="#about"
-                      className="hover:opacity-50"
+                    <Link
+                      to="about"
+                      smooth={true}
+                      duration={500}
                       onClick={toggleMenu}
+                      className="hover:opacity-50"
                     >
                       Sobre
-                    </a>
+                    </Link>
                   </li>
                   <li className="mb-2">
-                    <a
-                      href="#games"
-                      className="hover:opacity-50"
+                    <Link
+                      to="games"
+                      smooth={true}
+                      duration={500}
                       onClick={toggleMenu}
+                      className="hover:opacity-50"
                     >
                       Jogos
-                    </a>
+                    </Link>
                   </li>
                   <li className="mb-5">
-                    <a
-                      href="#faqs"
-                      className="hover:opacity-50"
+                    <Link
+                      to="faqs"
+                      smooth={true}
+                      duration={500}
                       onClick={toggleMenu}
+                      className="hover:opacity-50"
                     >
                       FAQs
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </nav>
