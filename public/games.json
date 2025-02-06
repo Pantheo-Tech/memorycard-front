@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "title": "Dark Souls",
+    "image": "./src/assets/img/game2.jpg",
+    "rating": 4,
+    "description": "Dark Souls é um RPG de ação da FromSoftware, lançado em 2011, conhecido por sua dificuldade punitiva, combate estratégico e narrativa ambiental profunda. "
+  },
+  {
+    "id": 2,
+    "title": "Ico",
+    "image": "./src/assets/img/game3.jpg",
+    "rating": 5,
+    "description": "ICO é um jogo de aventura e quebra-cabeça lançado em 2001 pela Team Ico. A história acompanha um menino com chifres, preso em um castelo misterioso, que precisa guiar uma jovem chamada Yorda para escapar."
+  },
+  {
+    "id": 3,
+    "title": "Catherine",
+    "image": "./src/assets/img/game4.png",
+    "rating": 3,
+    "description": "Catherine é um jogo de puzzle e aventura lançado em 2011 pela Atlus. A história segue Vincent Brooks, um homem dividido entre sua namorada de longa data, Katherine, e a misteriosa Catherine, enquanto enfrenta pesadelos mortais. "
+  },
+  {
+    "id": 4,
+    "title": "Jogo 5",
+    "image": "./src/assets/img/game2.jpg",
+    "rating": 5,
+    "description": "Dark Souls é um RPG de ação da FromSoftware, lançado em 2011, conhecido por sua dificuldade punitiva, combate estratégico e narrativa ambiental profunda."
+  },
+  {
+    "id": 5,
+    "title": "Jogo 5",
+    "image": "./src/assets/img/game1.png",
+    "rating": 5,
+    "description": "Red Alert é um jogo de estratégia em tempo real (RTS) lançado em 1996 pela Westwood Studios. O jogo se passa em uma linha do tempo alternativa onde, em vez de Adolf Hitler, Albert Einstein usa a tecnologia de viagem no tempo para eliminar o líder nazista, resultando em uma guerra fria entre os aliados e a União Soviética."
+  },
+  {
+    "id": 6,
+    "title": "Jogo 5",
+    "image": "./src/assets/img/game4.png",
+    "rating": 5,
+    "description": "Catherine é um jogo de puzzle e aventura lançado em 2011 pela Atlus. A história segue Vincent Brooks, um homem dividido entre sua namorada de longa data, Katherine, e a misteriosa Catherine, enquanto enfrenta pesadelos mortais. "
+  },
+  {
+    "id": 7,
+    "title": "Red Alert",
+    "image": "./src/assets/img/game1.png",
+    "rating": 4,
+    "description": "Red Alert é um jogo de estratégia em tempo real (RTS) lançado em 1996 pela Westwood Studios. O jogo se passa em uma linha do tempo alternativa onde, em vez de Adolf Hitler, Albert Einstein usa a tecnologia de viagem no tempo para eliminar o líder nazista, resultando em uma guerra fria entre os aliados e a União Soviética."
+  },
+  {
+    "id": 8,
+    "title": "Jogo 5",
+    "image": "./src/assets/img/game1.png",
+    "rating": 5,
+    "description": "Red Alert é um jogo de estratégia em tempo real (RTS) lançado em 1996 pela Westwood Studios. O jogo se passa em uma linha do tempo alternativa onde, em vez de Adolf Hitler, Albert Einstein usa a tecnologia de viagem no tempo para eliminar o líder nazista, resultando em uma guerra fria entre os aliados e a União Soviética."
+  }
+]
