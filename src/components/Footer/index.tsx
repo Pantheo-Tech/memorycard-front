@@ -1,7 +1,8 @@
+import React from "react";
 import Button from "../Button";
 import FooterContent from "../Footer/FooterContent";
 
-const Footer = () => {
+const Footer: React.FC = () => {
   return (
     <div className="bg-bg-footer bg-cover bg-center h-[300px] flex flex-col justify-center items-center relative">
       <div className="absolute top-0 left-0 w-full h-full bg-background opacity-90 z-10"></div>

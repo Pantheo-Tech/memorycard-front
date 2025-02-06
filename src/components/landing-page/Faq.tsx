@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import faqUp from "../../assets/img/faq-up.png";
 import faqDown from "../../assets/img/faq-down.png";
 
@@ -20,7 +20,7 @@ const faqData = [
   },
 ];
 
-const Faq = () => {
+const Faq: React.FC = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   const toggleAnswer = (index: number) => {

@@ -1,4 +1,6 @@
-const FooterNav = () => {
+import React from "react";
+
+const FooterNav: React.FC = () => {
   return (
     <nav>
       <ul className="flex gap-8 md:gap-[50px] p-4 font-jomolhari">

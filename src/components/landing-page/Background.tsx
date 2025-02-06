@@ -1,7 +1,8 @@
+import React from "react";
 import background from "../../assets/img/background-landing-page.png";
 import Overlay from "./Overlay";
 
-const Background = () => {
+const Background: React.FC = () => {
   return (
     <div className="absolute top-0 left-0 w-full min-h-screen">
       <Overlay />

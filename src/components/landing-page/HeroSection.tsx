@@ -1,6 +1,7 @@
+import React from "react";
 import Button from "../Button";
 
-const HeroSection = () => {
+const HeroSection: React.FC = () => {
   return (
     <div className="flex flex-col justify-center items-center m-auto w-[80%] relative z-10 mt-20 md:mt-40 pb-10">
       <div>

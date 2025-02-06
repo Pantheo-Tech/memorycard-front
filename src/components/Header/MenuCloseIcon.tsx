@@ -1,6 +1,6 @@
 import React from 'react'
 
-const MenuCloseIcon = () => {
+const MenuCloseIcon: React.FC = () => {
   return (
     <svg width="32" height="31" xmlns="http://www.w3.org/2000/svg">
       <g fill="#fff" fill-rule="evenodd">
