@@ -4,6 +4,7 @@ import { Link } from "react-scroll"; // Importe o Link do react-scroll
 import Button from "../Button";
 import MenuCloseIcon from "./MenuCloseIcon";
 import MenuOpenIcon from "./MenuOpenIcon";
+import Logo from "./Logo";
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -26,10 +27,12 @@ const Header: React.FC = () => {
 
   return (
     <header className="flex justify-between items-center bg-transparent text-primaryText sm:text-xl relative z-10 py-10 px-10 md:px-20">
-      <p>Logo Aqui</p>
+      <div className="w-[200px] md:w-[300px]">
+        <Logo />
+      </div>
 
       <button
-        className="md:hidden absolute top-9 right-6 z-50"
+        className="md:hidden absolute top-14 right-6 z-50"
         onClick={toggleMenu}
       >
         {isMenuOpen ? <MenuCloseIcon /> : <MenuOpenIcon />}
@@ -100,7 +103,7 @@ const Header: React.FC = () => {
               transition={{ duration: 0.4, ease: "easeInOut" }}
               className="fixed right-0 top-0 w-full h-full bg-background text-white flex flex-col items-center justify-center z-50"
             >
-              <button className="absolute top-9 right-6" onClick={toggleMenu}>
+              <button className="absolute top-14 right-6" onClick={toggleMenu}>
                 <MenuCloseIcon />
               </button>
 

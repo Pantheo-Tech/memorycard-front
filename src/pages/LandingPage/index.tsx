@@ -6,7 +6,7 @@ import GamesCarousel from "../../components/landing-page/GamesCarousel";
 
 const LandingPage = () => {
   return (
-    <>
+    <div className="overflow-x-hidden">
       <section>
         <TopSection />
       </section>
@@ -47,7 +47,7 @@ const LandingPage = () => {
       <section>
         <Footer />
       </section>
-    </>
+    </div>
   );
 };
 
