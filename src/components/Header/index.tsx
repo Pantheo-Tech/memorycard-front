@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { MenuIcon, XIcon } from "lucide-react";
-import Button from "../button";
+import Button from "../Button";
 import Logo from "./Logo";
-import MobileMenu from "../mobile-menu/index";
+import MobileMenu from "../MobileMenu";
 
-const Header: React.FC = () => {
+export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => setIsMenuOpen((prev) => !prev);
@@ -33,6 +33,4 @@ const Header: React.FC = () => {
       <MobileMenu isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />
     </header>
   );
-};
-
-export default Header;
+}

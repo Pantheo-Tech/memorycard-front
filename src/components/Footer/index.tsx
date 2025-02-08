@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "../button";
+import Button from "../Button";
 import FooterContent from "./FooterContent";
 
 const Footer: React.FC = () => {

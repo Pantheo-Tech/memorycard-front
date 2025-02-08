@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Button from "../button/index";
+import Button from "../Button";
 import Slider from "react-slick";
 import ReactStars from "react-stars";
 

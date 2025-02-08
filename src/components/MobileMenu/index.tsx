@@ -2,7 +2,7 @@ import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-scroll";
 import { XIcon } from "lucide-react";
-import Button from "../button";
+import Button from "../Button";
 
 interface MobileMenuProps {
   isMenuOpen: boolean;
