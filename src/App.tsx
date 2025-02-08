@@ -1,4 +1,4 @@
-import Header from "./components/Header";
+import Header from "./components/header";
 import LandingPage from "./pages/LandingPage";
 import "./styles/global.css";
 import "slick-carousel/slick/slick.css";

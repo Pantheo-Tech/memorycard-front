@@ -1,10 +1,12 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Link } from "react-scroll"; // Importando o Link do react-scroll
 
 const menuItems = [
-  { title: "Home", link: "#inicio" },
-  { title: "Sobre", link: "#sobre" },
-  { title: "Contato", link: "#contato" },
+  { title: "Home", link: "header" }, // Alterei os links para não usarem #, mas sim o id direto
+  { title: "Sobre", link: "about" },
+  { title: "Jogos", link: "games" },
+  { title: "FAQs", link: "faqs" },
 ];
 
 export default function SideMenu() {
@@ -31,9 +33,15 @@ export default function SideMenu() {
                 whileHover={{ scale: 1.1 }}
                 className="p-2 cursor-pointer transition-colors"
               >
-                <a href={item.link} className="text-white">
+                {/* Usando o Link para rolagem suave */}
+                <Link
+                  to={item.link}
+                  smooth={true} // Ativa a rolagem suave
+                  duration={500} // Define a duração da animação de rolagem
+                  className="text-white"
+                >
                   {item.title}
-                </a>
+                </Link>
               </motion.li>
             ))}
           </motion.ul>

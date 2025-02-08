@@ -1,6 +1,6 @@
 import TopSection from "../../components/landing-page/TopSection";
 import SectionTitle from "../../components/landing-page/SectionTitle";
-import Footer from "../../components/Footer";
+import Footer from "../../components/footer";
 import Faq from "../../components/landing-page/Faq";
 import GamesCarousel from "../../components/landing-page/GamesCarousel";
 import { ContentSection } from "../../components/landing-page/ContentSection";
