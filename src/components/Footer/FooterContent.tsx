@@ -1,6 +1,6 @@
 import React from "react";
-import FooterNav from "../Footer/FooterNav"
-import FooterSocialLinks from "../Footer/FooterSocialLinks"
+import FooterNav from "./FooterNav";
+import FooterSocialLinks from "./FooterSocialLinks";
 
 const FooterContent: React.FC = () => {
   return (
@@ -16,6 +16,6 @@ const FooterContent: React.FC = () => {
       </div>
     </div>
   );
-}
+};
 
-export default FooterContent
+export default FooterContent;

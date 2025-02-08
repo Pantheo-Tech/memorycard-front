@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Button from "../Button/index";
+import Button from "../Button";
 import Slider from "react-slick";
 import ReactStars from "react-stars";
 
@@ -39,13 +39,13 @@ const GamesCarousel = () => {
     },
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1240,
         settings: {
           slidesToShow: 3,
         },
       },
       {
-        breakpoint: 700,
+        breakpoint: 750,
         settings: {
           slidesToShow: 1,
         },
