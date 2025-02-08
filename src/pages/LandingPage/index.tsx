@@ -1,9 +1,9 @@
-import TopSection from "../../components/landing-page/TopSection";
-import SectionTitle from "../../components/landing-page/SectionTitle";
+import TopSection from "../../components/LandingPage/TopSection";
+import SectionTitle from "../../components/LandingPage/SectionTitle";
 import Footer from "../../components/Footer";
-import Faq from "../../components/landing-page/Faq";
-import GamesCarousel from "../../components/landing-page/GamesCarousel";
-import { ContentSection } from "../../components/landing-page/ContentSection";
+import Faq from "../../components/LandingPage/Faq";
+import GamesCarousel from "../../components/LandingPage/GamesCarousel";
+import { ContentSection } from "../../components/LandingPage/ContentSection";
 import img from "../../assets/img/Placeholder.png";
 import SideMenu from "../../components/Menu";
 
