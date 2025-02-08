@@ -4,7 +4,7 @@ import HeroSection from "./HeroSection";
 
 const TopSection: React.FC = () => {
   return (
-    <div className="relative z-0 min-h-screen border-4 border-background">
+    <div className="relative min-h-screen border-4 border-background">
       <Background />
       <div className="relative">
         <HeroSection />
