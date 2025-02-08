@@ -4,7 +4,7 @@ import Footer from "../../components/Footer";
 import Faq from "../../components/landing-page/Faq";
 import GamesCarousel from "../../components/landing-page/GamesCarousel";
 import { ContentSection } from "../../components/landing-page/ContentSection";
-import img from "../../assets/img/placeholder.png";
+import img from "../../assets/img/Placeholder.png";
 import SideMenu from "../../components/menu";
 
 const LandingPage = () => {

@@ -12,7 +12,7 @@ export default function SideMenu() {
 
   return (
     <nav
-      className="fixed top-1/2 left-0 z-50 flex flex-col items-start transition-all duration-500 ease-in-out"
+      className="hidden md:flex fixed top-1/2 left-0 z-50 flex-col items-start transition-all duration-500 ease-in-out"
       onMouseEnter={() => setShowMenu(true)}
       onMouseLeave={() => setShowMenu(false)}
     >

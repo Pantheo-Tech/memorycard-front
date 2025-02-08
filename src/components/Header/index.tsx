@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Link } from "react-scroll"; // Importe o Link do react-scroll
+import { Link } from "react-scroll";
+import { MenuIcon, XIcon } from "lucide-react";
+
 import Button from "../Button";
-import MenuCloseIcon from "./MenuCloseIcon";
-import MenuOpenIcon from "./MenuOpenIcon";
 import Logo from "./Logo";
 
 const Header: React.FC = () => {
@@ -35,7 +35,7 @@ const Header: React.FC = () => {
         className="md:hidden absolute top-14 right-6 z-50"
         onClick={toggleMenu}
       >
-        {isMenuOpen ? <MenuCloseIcon /> : <MenuOpenIcon />}
+        {isMenuOpen ? <XIcon /> : <MenuIcon />}
       </button>
 
       <nav className="hidden md:block font-jomolhari">
@@ -104,7 +104,7 @@ const Header: React.FC = () => {
               className="fixed right-0 top-0 w-full h-full bg-background text-white flex flex-col items-center justify-center z-50"
             >
               <button className="absolute top-14 right-6" onClick={toggleMenu}>
-                <MenuCloseIcon />
+                <XIcon />
               </button>
 
               <nav className="text-xl space-y-6 font-jomolhari">
