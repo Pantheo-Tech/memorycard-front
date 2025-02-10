@@ -47,11 +47,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isMenuOpen, toggleMenu }) => {
               ))}
             </ul>
           </nav>
-          <Button
-            title="Acessar"
-            className="h-[34px] w-[142px] text-[16px]"
-            onClick={toggleMenu}
-          />
+          <Button title="Acessar" className="h-[34px] w-[142px] text-[16px]" onClick={toggleMenu} />
         </motion.div>
       )}
     </AnimatePresence>

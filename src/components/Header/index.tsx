@@ -18,17 +18,11 @@ export default function Header() {
         <Logo />
       </div>
 
-      <button
-        className="md:hidden absolute top-14 right-6 z-50"
-        onClick={toggleMenu}
-      >
+      <button className="md:hidden absolute top-14 right-6 z-50" onClick={toggleMenu}>
         {isMenuOpen ? <XIcon size={32} /> : <MenuIcon size={32} />}
       </button>
 
-      <Button
-        title="Acessar"
-        className="h-[34px] w-[142px] text-[16px] hidden md:block"
-      />
+      <Button title="Acessar" className="h-[34px] w-[142px] text-[16px] hidden md:block" />
 
       <MobileMenu isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />
     </header>

@@ -7,7 +7,9 @@ interface ContentSectionProps {
 }
 
 export const ContentSection: React.FC<ContentSectionProps> = ({
-  img, text, isRowReverse = false,
+  img,
+  text,
+  isRowReverse = false,
 }) => {
   return (
     <section
@@ -17,9 +19,7 @@ export const ContentSection: React.FC<ContentSectionProps> = ({
     >
       <img src={img} alt="" className="w-full md:w-1/2" />
       <div className="md:w-1/2">
-        <p className="mt-4 font-ubuntu text-sm md:text-xl lg:text-2xl">
-          {text}
-        </p>
+        <p className="mt-4 font-ubuntu text-sm md:text-xl lg:text-2xl">{text}</p>
       </div>
     </section>
   );

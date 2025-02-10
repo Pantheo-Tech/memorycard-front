@@ -82,10 +82,7 @@ const GamesCarousel = () => {
                     />
                   </div>
                   <p className="text-left text-sm mb-4">{game.description}</p>
-                  <Button
-                    title="Leia mais"
-                    className="h-[34px] w-[224px] text-[18px]"
-                  />
+                  <Button title="Leia mais" className="h-[34px] w-[224px] text-[18px]" />
                 </div>
               )}
             </div>

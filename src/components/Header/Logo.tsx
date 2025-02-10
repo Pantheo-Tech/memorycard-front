@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 const Logo: React.FC = () => {
   return (
@@ -12,12 +12,7 @@ const Logo: React.FC = () => {
     >
       <rect width="293" height="68" fill="url(#pattern0_32_181)" />
       <defs>
-        <pattern
-          id="pattern0_32_181"
-          patternContentUnits="objectBoundingBox"
-          width="1"
-          height="1"
-        >
+        <pattern id="pattern0_32_181" patternContentUnits="objectBoundingBox" width="1" height="1">
           <use
             xlinkHref="#image0_32_181"
             transform="matrix(0.00292893 0 0 0.0138889 -0.225528 -2.98611)"
@@ -32,6 +27,6 @@ const Logo: React.FC = () => {
       </defs>
     </svg>
   );
-}
+};
 
-export default Logo
+export default Logo;
