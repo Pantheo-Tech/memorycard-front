@@ -1,6 +1,6 @@
 import React from "react";
 import background from "../../assets/img/background-landing-page.png";
-import Overlay from "./Overlay";
+import Overlay from "../Overlay";
 
 const Background: React.FC = () => {
   return (

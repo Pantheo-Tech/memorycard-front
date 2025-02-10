@@ -1,6 +1,6 @@
 import React from "react";
-import Background from "./Background";
-import HeroSection from "./HeroSection";
+import Background from "../Background";
+import HeroSection from "../HeroSection";
 
 const TopSection: React.FC = () => {
   return (

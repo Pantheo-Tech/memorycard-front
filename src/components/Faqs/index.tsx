@@ -1,6 +1,5 @@
-import React, { useState } from "react";
-import faqUp from "../../assets/img/faq-up.png";
-import faqDown from "../../assets/img/faq-down.png";
+import { useState } from "react";
+import { ChevronDown, ChevronUp } from "lucide-react";
 
 const faqData = [
   {
@@ -45,7 +44,7 @@ const faqData = [
   },
 ];
 
-const Faq: React.FC = () => {
+export default function Faq() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   const toggleAnswer = (index: number) => {
@@ -57,22 +56,27 @@ const Faq: React.FC = () => {
       {faqData.map((faq, index) => (
         <div key={index} className="mb-6 w-full">
           <dt
-            className="cursor-pointer flex items-center gap-2 bg-gradientRedToLight bg-clip-text text-transparent font-bold text-lg md:text-2xl"
+            className="cursor-pointer flex items-center justify-between gap-2 bg-gradientRedToLight bg-clip-text text-transparent font-bold text-lg md:text-2xl"
             onClick={() => toggleAnswer(index)}
           >
             {faq.question}
-            <img
-              src={openIndex === index ? faqUp : faqDown}
-              alt={openIndex === index ? "Close" : "Open"}
-              className="w-4 h-4"
-            />
+
+            {openIndex === index ? (
+              <ChevronUp className="bg-red text-black rounded-full text-xs" />
+            ) : (
+              <ChevronDown className="bg-red text-black rounded-full text-xs" />
+            )}
           </dt>
-          {openIndex === index && <dd>{faq.answer}</dd>}
+          <dd
+            className={`overflow-hidden ${
+              openIndex === index ? "animate-expand" : "animate-collapse"
+            }`}
+          >
+            {faq.answer}
+          </dd>
           <hr className="mt-4 opacity-30" />
         </div>
       ))}
     </dl>
   );
-};
-
-export default Faq;
+}

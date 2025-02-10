@@ -33,7 +33,8 @@
     "@types/react-stars": "^2.2.4",
     "@vitejs/plugin-react": "^4.3.4",
     "autoprefixer": "^10.4.20",
-    "cz-conventional-changelog": "^3.3.0",
+    "commitizen": "^4.3.0",
+    "commitizen-emoji": "^1.0.5",
     "eslint": "^9.17.0",
     "eslint-plugin-react": "^7.37.2",
     "eslint-plugin-react-hooks": "^5.0.0",
@@ -45,7 +46,14 @@
   },
   "config": {
     "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
+      "path": "./node_modules/commitizen-emoji"
+    },
+    "commitizenEmoji": {
+      "conventionalFormat": true,
+      "skipQuestions": [
+        "breakingBody",
+        "issues"
+      ]
     }
   }
 }

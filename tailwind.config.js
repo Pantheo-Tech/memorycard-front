@@ -24,6 +24,20 @@ export default {
         radialGradient: "radial-gradient(circle, var(--tw-gradient-stops))",
         "bg-footer": "url('../../src/assets/img/background-footer.png')",
       },
+      animation: {
+        expand: "expand 0.5s ease-in-out forwards",
+        collapse: "collapse 0.5s ease-in-out forwards",
+      },
+      keyframes: {
+        expand: {
+          "0%": { height: "0px", opacity: "0" },
+          "100%": { height: "auto", opacity: "1" },
+        },
+        collapse: {
+          "0%": { height: "auto", opacity: "1" },
+          "100%": { height: "0px", opacity: "0" },
+        },
+      },
     },
   },
   plugins: [],

@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from "react";
-import Button from "../Button";
+import { useState, useEffect } from "react";
 import Slider from "react-slick";
 import ReactStars from "react-stars";
+
+import Button from "../Button";
 
 type Game = {
   id: number;
