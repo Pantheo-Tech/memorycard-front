@@ -11,7 +11,7 @@ interface InputProps {
 
 const Input: React.FC<InputProps> = ({ placeholder, type, name, value, onChange, error }) => {
   return (
-    <div className="mb-4 w-full">
+    <div className="mb-5 w-full">
       <input
         placeholder={placeholder}
         type={type}
@@ -19,7 +19,7 @@ const Input: React.FC<InputProps> = ({ placeholder, type, name, value, onChange,
         value={value}
         onChange={onChange}
         id={name}
-        className="mt-2 h-[45px] w-full px-3 py-2 border border-red bg-background rounded-md pl-12"
+        className="mt-2 h-[45px] w-full px-3 py-2 border border-red bg-background rounded-md pl-12 placeholder:font-roboto"
       />
       {error && <span className="text-red text-sm">{error}</span>}
     </div>

@@ -8,6 +8,7 @@ export default {
         jomolhari: ["Jomolhari", "serif"],
         stalinist: ["Stalinist One", "cursive"],
         ubuntu: ["Ubuntu", "sans-serif"],
+        roboto: ["Roboto", "sans-serif"],
       },
       colors: {
         background: "var(--background)",
@@ -37,6 +38,9 @@ export default {
           "0%": { height: "auto", opacity: "1" },
           "100%": { height: "0px", opacity: "0" },
         },
+      },
+      screens: {
+        "sm-custom": "474px",
       },
     },
   },

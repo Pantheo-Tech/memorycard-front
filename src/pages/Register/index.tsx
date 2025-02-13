@@ -6,21 +6,21 @@ import { User, Mail, Lock } from "lucide-react"; // Importe os ícones que você
 
 const Register: React.FC = () => {
   return (
-    <section className="min-h-screen flex flex-col justify-center items-center">
-      <div className="flex-1">
-        <h1 className="font-ubuntu text-2xl sm:text-3xl text-center font-medium md:font-bold p-10">
+    <section className="min-h-screen flex flex-col justify-center items-center font-roboto w-full">
+      <div className="flex-1  w-full px-10 sm-custom:w-[473px]">
+        <h1 className="text-2xl sm:text-3xl text-center font-medium md:font-bold py-5 px-10">
           Crie sua conta
         </h1>
         <form className="flex flex-col justify-center items-center w-full">
-          <div className="relative w-full max-w-md">
+          <div className="relative w-full">
             <User className="absolute left-3 top-5 text-red" size={20} />
             <Input placeholder="Nome" type="text" name="name" value="" onChange={() => {}} />
           </div>
-          <div className="relative w-full max-w-md mt-4">
+          <div className="relative w-full">
             <Mail className="absolute left-3 top-5 text-red" size={20} />
             <Input placeholder="Seu email" type="email" name="email" value="" onChange={() => {}} />
           </div>
-          <div className="relative w-full max-w-md mt-4">
+          <div className="relative w-full">
             <Lock className="absolute left-3 top-5 text-red" size={20} />
             <Input
               placeholder="Sua senha"

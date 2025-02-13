@@ -6,17 +6,17 @@ import { Lock, Mail } from "lucide-react";
 
 const Login: React.FC = () => {
   return (
-    <section className="min-h-screen flex flex-col justify-center items-center">
-      <div className="flex-1">
-        <h1 className="font-ubuntu text-2xl sm:text-3xl text-center font-medium md:font-bold p-10">
+    <section className="min-h-screen flex flex-col justify-center items-center font-roboto">
+      <div className="flex-1 w-full px-10 sm-custom:w-[473px]">
+        <h1 className="text-2xl sm:text-3xl text-center font-medium md:font-bold py-5 px-10">
           Acesse sua conta
         </h1>
         <form className="flex flex-col justify-center items-center w-full">
-          <div className="relative w-full max-w-md mt-4">
+          <div className="relative w-full">
             <Mail className="absolute left-3 top-5 text-red" size={20} />
             <Input placeholder="Seu email" type="email" name="email" value="" onChange={() => {}} />
           </div>
-          <div className="relative w-full max-w-md mt-4">
+          <div className="relative w-full">
             <Lock className="absolute left-3 top-5 text-red" size={20} />
             <Input
               placeholder="Sua senha"
