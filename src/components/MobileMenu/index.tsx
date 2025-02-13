@@ -1,8 +1,9 @@
 import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Link } from "react-scroll";
+import { Link as ScrollLink } from "react-scroll";
 import { XIcon } from "lucide-react";
 import Button from "../Button";
+import { Link } from "react-router-dom";
 
 interface MobileMenuProps {
   isMenuOpen: boolean;
@@ -34,20 +35,24 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isMenuOpen, toggleMenu }) => {
             <ul>
               {menuItems.map(({ title, link }) => (
                 <li key={link} className="mb-2">
-                  <Link
+                  <ScrollLink
                     to={link}
                     smooth
                     duration={500}
-                    onClick={toggleMenu}
+                    onClick={() => {
+                      toggleMenu(); // Fecha o menu
+                    }}
                     className="hover:opacity-50 cursor-pointer"
                   >
                     {title}
-                  </Link>
+                  </ScrollLink>
                 </li>
               ))}
             </ul>
           </nav>
-          <Button title="Acessar" className="h-[34px] w-[142px] text-[16px]" onClick={toggleMenu} />
+          <Link to="/register" onClick={toggleMenu}>
+            <Button title="Acessar" className="h-[34px] w-[142px] text-[16px]" />
+          </Link>
         </motion.div>
       )}
     </AnimatePresence>
