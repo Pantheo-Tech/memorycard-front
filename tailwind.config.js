@@ -23,6 +23,8 @@ export default {
         gradientBlackToRed: "linear-gradient(to right, #000, #EE4D50)",
         radialGradient: "radial-gradient(circle, var(--tw-gradient-stops))",
         "bg-footer": "url('../../src/assets/img/background-footer.png')",
+        'custom-gradient-banner': 'linear-gradient(180deg, rgba(0, 0, 0, 0.7) 10%, transparent)',
+        'custom-gradient-bottom-banner': 'linear-gradient(180deg, transparent, rgba(0, 0, 0, 1) 76%)',
       },
       animation: {
         expand: "expand 0.5s ease-in-out forwards",
