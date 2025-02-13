@@ -1,6 +1,5 @@
 import TopSection from "../../components/TopSection";
 import SectionTitle from "../../components/SectionTitle";
-import Footer from "../../components/Footer";
 import Faq from "../../components/Faqs";
 import GamesCarousel from "../../components/GamesCarousel";
 import { ContentSection } from "../../components/ContentSection";
@@ -72,10 +71,6 @@ const LandingPage = () => {
 
         <section>
           <Faq />
-        </section>
-
-        <section>
-          <Footer />
         </section>
       </div>
     </>
