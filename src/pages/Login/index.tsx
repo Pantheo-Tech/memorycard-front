@@ -9,7 +9,7 @@ const Login: React.FC = () => {
     <section className="min-h-screen flex flex-col justify-center items-center">
       <div className="flex-1">
         <h1 className="font-ubuntu text-2xl sm:text-3xl text-center font-medium md:font-bold p-10">
-          Crie sua conta
+          Acesse sua conta
         </h1>
         <form className="flex flex-col justify-center items-center w-full">
           <div className="relative w-full max-w-md mt-4">
@@ -32,7 +32,7 @@ const Login: React.FC = () => {
         </form>
         <div className="flex flex-col justify-center items-center mt-8">
           <p className="opacity-50">Não possui uma conta ainda?</p>
-          <Link className="underline text-red font-bold" to="/register">
+          <Link className="underline text-red font-bold hover:text-buttonHover" to="/register">
             Criar conta
           </Link>
         </div>

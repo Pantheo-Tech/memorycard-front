@@ -36,7 +36,7 @@ const Register: React.FC = () => {
         </form>
         <div className="flex flex-col justify-center items-center mt-8">
           <p className="opacity-50">Já possui uma conta?</p>
-          <Link className="underline text-red font-bold" to="/login">
+          <Link className="underline text-red font-bold hover:text-buttonHover" to="/login">
             Fazer login
           </Link>
         </div>
