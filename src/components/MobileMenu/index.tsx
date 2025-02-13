@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { HashLink } from "react-router-hash-link"; // Importando HashLink
 import { XIcon } from "lucide-react";
 import Button from "../Button";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 interface MobileMenuProps {
   isMenuOpen: boolean;
@@ -18,6 +18,9 @@ const menuItems = [
 ];
 
 const MobileMenu: React.FC<MobileMenuProps> = ({ isMenuOpen, toggleMenu }) => {
+  const location = useLocation();
+  const isLandingPage = location.pathname === "/";
+
   return (
     <AnimatePresence>
       {isMenuOpen && (
@@ -47,9 +50,11 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isMenuOpen, toggleMenu }) => {
               ))}
             </ul>
           </nav>
-          <Link to="/register" onClick={toggleMenu}>
-            <Button title="Acessar" className="h-[34px] w-[142px] text-[16px]" />
-          </Link>
+          {isLandingPage && (
+            <Link to="/register" onClick={toggleMenu}>
+              <Button title="Acessar" className="h-[34px] w-[142px] text-[16px]" />
+            </Link>
+          )}
         </motion.div>
       )}
     </AnimatePresence>
