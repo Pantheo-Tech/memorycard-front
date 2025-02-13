@@ -1,6 +1,6 @@
 import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Link as ScrollLink } from "react-scroll";
+import { HashLink } from "react-router-hash-link"; // Importando HashLink
 import { XIcon } from "lucide-react";
 import Button from "../Button";
 import { Link } from "react-router-dom";
@@ -35,17 +35,14 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isMenuOpen, toggleMenu }) => {
             <ul>
               {menuItems.map(({ title, link }) => (
                 <li key={link} className="mb-2">
-                  <ScrollLink
-                    to={link}
+                  <HashLink
+                    to={`/#${link}`} // Roteamento + rolagem usando #id
                     smooth
-                    duration={500}
-                    onClick={() => {
-                      toggleMenu(); // Fecha o menu
-                    }}
+                    onClick={toggleMenu}
                     className="hover:opacity-50 cursor-pointer"
                   >
                     {title}
-                  </ScrollLink>
+                  </HashLink>
                 </li>
               ))}
             </ul>
