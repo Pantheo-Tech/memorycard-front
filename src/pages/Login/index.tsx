@@ -3,28 +3,32 @@ import Input from "../../components/Input";
 import Button from "../../components/Button";
 import { Link } from "react-router-dom";
 import { Lock, Mail } from "lucide-react";
+import { useForm } from "react-hook-form";
 
 const Login: React.FC = () => {
+  const { register, handleSubmit } = useForm();
+
+  const onSubmit = (data: any) => {
+    console.log(data);
+  };
+
   return (
     <section className="min-h-screen flex flex-col justify-center items-center font-roboto">
       <div className="flex-1 w-full px-10 sm-custom:w-[473px]">
         <h1 className="text-2xl sm:text-3xl text-center font-medium md:font-bold py-5 px-10">
           Acesse sua conta
         </h1>
-        <form className="flex flex-col justify-center items-center w-full">
+        <form
+          className="flex flex-col justify-center items-center w-full"
+          onSubmit={handleSubmit(onSubmit)}
+        >
           <div className="relative w-full">
             <Mail className="absolute left-3 top-5 text-red" size={20} />
-            <Input placeholder="Seu email" type="email" name="email" value="" onChange={() => {}} />
+            <Input name="email" placeholder="Seu email" type="email" register={register} />
           </div>
           <div className="relative w-full">
             <Lock className="absolute left-3 top-5 text-red" size={20} />
-            <Input
-              placeholder="Sua senha"
-              type="password"
-              name="password"
-              value=""
-              onChange={() => {}}
-            />
+            <Input name="password" placeholder="Sua senha" type="password" register={register} />
           </div>
           <div className="pt-4 w-full">
             <Button title="Fazer login" className="h-[45px] w-full text-[20px]" />
