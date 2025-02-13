@@ -18,7 +18,7 @@ const Input: React.FC<InputProps> = ({ placeholder, type, name, register, error 
         {...register(name)}
         className="mt-2 h-[45px] w-full px-3 py-2 border border-red bg-background rounded-md pl-12 placeholder:font-roboto"
       />
-      {error && <span className="text-red text-sm">{error}</span>}
+      {error && <small className="text-red">{error}</small>}
     </div>
   );
 };

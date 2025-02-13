@@ -4,11 +4,27 @@ import Button from "../../components/Button";
 import { Link } from "react-router-dom";
 import { User, Mail, Lock } from "lucide-react"; // Importe os ícones que você deseja
 import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { z } from "zod";
+
+const registerSchema = z.object({
+  name: z.string().min(3),
+  email: z.string().email(),
+  password: z.string().min(8),
+});
+
+type RegisterData = z.infer<typeof registerSchema>;
 
 const Register: React.FC = () => {
-  const { register, handleSubmit } = useForm();
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<RegisterData>({
+    resolver: zodResolver(registerSchema),
+  });
 
-  const onSubmit = (data: any) => {
+  const onSubmit = (data: RegisterData) => {
     console.log(data);
   };
 
@@ -24,15 +40,33 @@ const Register: React.FC = () => {
         >
           <div className="relative w-full">
             <User className="absolute left-3 top-5 text-red" size={20} />
-            <Input name="name" placeholder="Nome" type="text" register={register} />
+            <Input
+              name="name"
+              placeholder="Nome"
+              type="text"
+              register={register}
+              error={errors.name?.message}
+            />
           </div>
           <div className="relative w-full">
             <Mail className="absolute left-3 top-5 text-red" size={20} />
-            <Input name="email" placeholder="Seu email" type="email" register={register} />
+            <Input
+              name="email"
+              placeholder="Seu email"
+              type="email"
+              register={register}
+              error={errors.email?.message}
+            />
           </div>
           <div className="relative w-full">
             <Lock className="absolute left-3 top-5 text-red" size={20} />
-            <Input name="password" placeholder="Sua senha" type="password" register={register} />
+            <Input
+              name="password"
+              placeholder="Sua senha"
+              type="password"
+              register={register}
+              error={errors.password?.message}
+            />
           </div>
           <div className="pt-4 w-full">
             <Button title="Criar conta" className="h-[45px] w-full text-[20px]" />
