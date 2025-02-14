@@ -1,12 +1,12 @@
 import React from "react";
 import { UseFormRegister } from "react-hook-form";
-interface InputProps {
+type InputProps = {
   type: string;
   name: string;
   placeholder: string;
   error?: string;
   register: UseFormRegister<any>;
-}
+} & React.InputHTMLAttributes<HTMLInputElement>;
 
 const Input: React.FC<InputProps> = ({ placeholder, type, name, register, error }) => {
   return (

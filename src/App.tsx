@@ -1,27 +1,18 @@
 import Header from "./components/Header";
-import LandingPage from "./pages/LandingPage";
+
 import "./styles/global.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Login from "./pages/Login";
-import Register from "./pages/Register";
-import Footer from "./components/Footer";
 
-function App() {
+import Footer from "./components/Footer";
+import { ReactNode } from "react";
+
+function App({ children }: { children: ReactNode }) {
   return (
     <>
-      <BrowserRouter>
-        <Header />
-        <main className="relative">
-          <Routes>
-            <Route path="/" element={<LandingPage />} />
-            <Route path="/register" element={<Register />} />
-            <Route path="/login" element={<Login />} />
-          </Routes>
-        </main>
-        <Footer />
-      </BrowserRouter>
+      <Header />
+      <main className="relative">{children}</main>
+      <Footer />
     </>
   );
 }
