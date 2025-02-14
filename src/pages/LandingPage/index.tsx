@@ -5,6 +5,7 @@ import GamesCarousel from "../../components/GamesCarousel";
 import { ContentSection } from "../../components/ContentSection";
 import img from "../../assets/img/Placeholder.png";
 import SideMenu from "../../components/Menu";
+import Footer from "../../components/Footer";
 
 const LandingPage = () => {
   return (
@@ -71,6 +72,10 @@ const LandingPage = () => {
 
         <section>
           <Faq />
+        </section>
+
+        <section>
+          <Footer />
         </section>
       </div>
     </>
