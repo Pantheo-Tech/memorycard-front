@@ -51,11 +51,11 @@ export function Carrossel() {
         >
             {items.map((item, index) => (
                 <SwiperSlide key={index} className="bg-black">
-                    <img src={item.image} alt="Imagem" className="opacity-50 h-[100vh] max-h-[900px] object-cover" />
-                    <section className="absolute left-14 top-[50%] translate-y-[-50%] flex gap-10 flex-col  text-gray-200">
-                        <h3 className="text-[50px] font-bold">{item.title}</h3>
-                        <p className="text-lg max-w-4xl">{item.text}</p>
-                        <Link to="#" className="hover:text-white hover:bg-buttonHover bg-red rounded-md w-28 h-8 px-[10px] py-5px text-base font-bold flex items-center justify-center">Saiba mais</Link>
+                    <img src={item.image} alt="Imagem" className="opacity-70 h-[100vh] max-h-[900px] max-lg:max-h-[700px] max-sm:max-h-[453px] object-cover" />
+                    <section className="absolute max-md:left-5 left-14 top-[50%] translate-y-[-50%] flex gap-10 flex-col text-gray-200 max-w-2xl max-sm:max-w-72">
+                        <h3 className="text-[50px] max-md:text-4xl max-sm:text-2xl font-bold">{item.title}</h3>
+                        <p className="text-lg max-md:text-base max-sm:text-xs">{item.text}</p>
+                        <Link to="#" className="hover:text-white hover:bg-buttonHover bg-red rounded-md w-28 max-sm:w-24 h-8 max-sm:h-6 px-[10px] py-5px text-base max-md:text-sm max-sm:text-xs font-bold flex items-center justify-center">Saiba mais</Link>
                     </section>
                 </SwiperSlide>
             ))}

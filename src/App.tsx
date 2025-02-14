@@ -1,18 +1,19 @@
 import Header from "./components/Header";
-import LandingPage from "./pages/LandingPage";
+
 import "./styles/global.css";
-import 'swiper/css';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Home from "./pages/Home";
+import 'swiper/css';
 
-function App() {
+import { ReactNode } from "react";
+import NavMenu from "./components/NavMobile";
+
+function App({ children }: { children: ReactNode }) {
   return (
     <>
-      <Header />
-      <main className="relative">
-        <LandingPage />
-      </main>
+      {/* <Header /> */}
+      <main className="relative">{children}</main>
+      <NavMenu />
     </>
   );
 }

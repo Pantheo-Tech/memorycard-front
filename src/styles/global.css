@@ -39,6 +39,7 @@ body {
   justify-content: center;
   background: rgba(0, 0, 0, 0.6);
   width: 4.51%;
+  min-width: 50px;
   height: 314px;
   top: 0;
   z-index: 100;
@@ -49,6 +50,7 @@ body {
 .listGames .swiper-button-prev.swiper-button-disabled,
 .listGames .swiper-button-next.swiper-button-disabled {
   width: 0;
+  min-width: 0;
 }
 
 .listGames .swiper-button-next {

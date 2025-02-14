@@ -91,7 +91,6 @@ export function ListGames({ text }: ListGamesType) {
                             alt="Imagem" className="rounded-xl border-gray-800 border" width={230}
                             height={314} /></Link>
                     </SwiperSlide>
-
                 ))}
             </Swiper>
         </div>
