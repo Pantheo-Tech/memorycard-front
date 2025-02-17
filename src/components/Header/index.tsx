@@ -3,11 +3,14 @@ import { MenuIcon, XIcon } from "lucide-react";
 import Button from "../Button";
 import Logo from "./Logo";
 import MobileMenu from "../MobileMenu";
+import { Link, useLocation } from "react-router-dom";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
+  const location = useLocation();
   const toggleMenu = () => setIsMenuOpen((prev) => !prev);
+
+  const isLandingPage = location.pathname === "/";
 
   return (
     <header
@@ -22,7 +25,11 @@ export default function Header() {
         {isMenuOpen ? <XIcon size={32} /> : <MenuIcon size={32} />}
       </button>
 
-      <Button title="Acessar" className="h-[34px] w-[142px] text-[16px] hidden md:block" />
+      {isLandingPage && (
+        <Link to="/register">
+          <Button title="Acessar" className="h-[34px] w-[142px] text-[16px] hidden md:block" />
+        </Link>
+      )}
 
       <MobileMenu isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />
     </header>

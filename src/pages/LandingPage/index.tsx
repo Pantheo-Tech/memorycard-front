@@ -1,11 +1,11 @@
 import TopSection from "../../components/TopSection";
 import SectionTitle from "../../components/SectionTitle";
-import Footer from "../../components/Footer";
 import Faq from "../../components/Faqs";
 import GamesCarousel from "../../components/GamesCarousel";
 import { ContentSection } from "../../components/ContentSection";
 import img from "../../assets/img/Placeholder.png";
 import SideMenu from "../../components/Menu";
+import Footer from "../../components/Footer";
 
 const LandingPage = () => {
   return (
