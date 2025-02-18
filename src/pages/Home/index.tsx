@@ -8,7 +8,7 @@ export default function Home() {
     <main>
       <HeaderHome />
       <Carrossel />
-      <section className="flex flex-col gap-10 ml-16">
+      <section className="flex flex-col gap-10 ml-16 max-sm:ml-4 mb-24">
         <ListGames text="Jogos Recomendados" />
         <ListGames text="Ação" />
         <ListGames text="Mundo Aberto" />

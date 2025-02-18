@@ -6,7 +6,7 @@ const TopSection: React.FC = () => {
   return (
     <div className="relative min-h-screen border-4 border-background">
       <Background />
-      <div className="relative">
+      <div className="relative pt-10">
         <HeroSection />
       </div>
     </div>

@@ -1,8 +1,9 @@
 import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Link } from "react-scroll";
+import { HashLink } from "react-router-hash-link"; // Importando HashLink
 import { XIcon } from "lucide-react";
 import Button from "../Button";
+import { Link, useLocation } from "react-router-dom";
 
 interface MobileMenuProps {
   isMenuOpen: boolean;
@@ -17,6 +18,9 @@ const menuItems = [
 ];
 
 const MobileMenu: React.FC<MobileMenuProps> = ({ isMenuOpen, toggleMenu }) => {
+  const location = useLocation();
+  const isLandingPage = location.pathname === "/";
+
   return (
     <AnimatePresence>
       {isMenuOpen && (
@@ -34,20 +38,23 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isMenuOpen, toggleMenu }) => {
             <ul>
               {menuItems.map(({ title, link }) => (
                 <li key={link} className="mb-2">
-                  <Link
-                    to={link}
+                  <HashLink
+                    to={`/#${link}`} // Roteamento + rolagem usando #id
                     smooth
-                    duration={500}
                     onClick={toggleMenu}
                     className="hover:opacity-50 cursor-pointer"
                   >
                     {title}
-                  </Link>
+                  </HashLink>
                 </li>
               ))}
             </ul>
           </nav>
-          <Button title="Acessar" className="h-[34px] w-[142px] text-[16px]" onClick={toggleMenu} />
+          {isLandingPage && (
+            <Link to="/register" onClick={toggleMenu}>
+              <Button title="Acessar" className="h-[34px] w-[142px] text-[16px]" />
+            </Link>
+          )}
         </motion.div>
       )}
     </AnimatePresence>

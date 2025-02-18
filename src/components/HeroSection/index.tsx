@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "../Button";
+import { Link } from "react-router-dom";
 
 const HeroSection: React.FC = () => {
   return (
@@ -9,10 +10,12 @@ const HeroSection: React.FC = () => {
           MemoryCard: Guarde Cada Momento da Sua Jornada Gamer!
         </h1>
       </div>
-      <Button
-        title="Comece Agora - É Grátis!"
-        className="h-[45px] w-[250px] text-[20px] md:h-[50px] md:w-[322px] md:text-[24px]"
-      />
+      <Link to="/register">
+        <Button
+          title="Comece Agora - É Grátis!"
+          className="h-[45px] w-[250px] text-[20px] md:h-[50px] md:w-[322px] md:text-[24px]"
+        />
+      </Link>
     </div>
   );
 };

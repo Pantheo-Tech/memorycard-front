@@ -40,7 +40,7 @@ body {
   background: rgba(0, 0, 0, 0.6);
   width: 4.51%;
   min-width: 50px;
-  height: 314px;
+  height: 100%;
   top: 0;
   z-index: 100;
   cursor: pointer;
@@ -85,4 +85,18 @@ body {
   width: 40px;
   height: 60px;
   transform: scaleX(-1);
+}
+
+@media (max-width: 640px) {
+  .listGames .swiper-slide {
+    width: 130px !important;
+  }
+
+  .listGames .swiper-button-next::after,
+  .listGames .swiper-button-prev::after {
+    width: 20px;
+    height: 40px;
+  }
+
+
 }

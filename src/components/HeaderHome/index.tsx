@@ -11,7 +11,7 @@ export default function HeaderHome() {
 
     return (
         <header className={`flex justify-between items-center w-full ${pathname === "/home" ? "bg-custom-gradient-banner fixed top-0 z-50" : "bg-background"} px-16 max-lg:px-10 max-sm:px-6 py-5 h-20`}>
-            <Link to="/home"><img src={Logo} alt="Logo da pagina" className="w-52 max-lg:w-44" /></Link>
+            <Link to="/home"><img src={Logo} alt="Logo da pagina" className="w-52 max-lg:w-44 max-sm:w-28" /></Link>
             <nav className={`flex gap-5 max-md:hidden `}>
                 <LinkHeader link={"/home"} text="Inicio" />
                 <LinkHeader link={"/games"} text="Jogos" />
@@ -35,7 +35,7 @@ export default function HeaderHome() {
                     <button className="flex items-center gap-3">
                         <div className="rounded-full bg-slate-600 w-[30px] h-[30px]">
                         </div>
-                        <ChevronDown />
+                        <ChevronDown className="w-4 h-4" />
                     </button>
                 </li>
             </ul>

@@ -62,8 +62,8 @@ export function ListGames({ text }: ListGamesType) {
     return (
         <div>
             <section className="text-gray-200 flex gap-5 items-center text-2xl font-bold mb-5">
-                <span>{text}</span>
-                <ChevronRight width={24} />
+                <span className='max-sm:text-base text-2xl '>{text}</span>
+                <ChevronRight width={24} className="w-6 h-6  max-sm:w-5  max-sm:h-5" />
             </section>
             <Swiper
                 slidesPerView="auto"
@@ -86,7 +86,7 @@ export function ListGames({ text }: ListGamesType) {
 
                 {GamesTop.map((game, index) => (
                     <SwiperSlide key={index}>
-                        <Link to="#" className="w-[230px] h-[314px] rounded-xl"><img key={game.id}
+                        <Link to="#" className="rounded-xl"><img key={game.id}
                             src={game.bannerUrl}
                             alt="Imagem" className="rounded-xl border-gray-800 border" width={230}
                             height={314} /></Link>
