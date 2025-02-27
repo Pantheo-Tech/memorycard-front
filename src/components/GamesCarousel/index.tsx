@@ -61,9 +61,8 @@ const GamesCarousel = () => {
           {games.map((game, index) => (
             <div
               key={game.id}
-              className={`relative group ${
-                index === current ? "scale-110" : "scale-90 grayscale"
-              } transition-transform duration-300 flex flex-col justify-center items-center`}
+              className={`relative group ${index === current ? "scale-110" : "scale-90 grayscale"
+                } transition-transform duration-300 flex flex-col justify-center items-center`}
             >
               <img
                 src={game.image}
