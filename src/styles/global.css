@@ -22,7 +22,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-
 .listGames {
   position: relative;
 }
@@ -56,7 +55,6 @@ body {
 .listGames .swiper-button-next {
   right: 0;
   border-radius: 10px 0 0 10px;
-
 }
 
 .listGames .swiper-button-prev {
@@ -97,6 +95,4 @@ body {
     width: 20px;
     height: 40px;
   }
-
-
 }

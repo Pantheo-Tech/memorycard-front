@@ -8,7 +8,7 @@ import NavMenu from "./components/NavMobile";
 import "./styles/global.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import 'swiper/css';
+import "swiper/css";
 
 function App({ children }: { children: ReactNode }) {
   const { pathname } = useLocation();
@@ -18,9 +18,7 @@ function App({ children }: { children: ReactNode }) {
   return (
     <>
       {isSpecialPage ? <HeaderHome /> : <Header />}
-      <main className="relative">
-        {children}
-      </main>
+      <main className="relative">{children}</main>
       {isSpecialPage && <NavMenu />}
     </>
   );

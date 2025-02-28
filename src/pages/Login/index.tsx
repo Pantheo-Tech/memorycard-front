@@ -14,10 +14,6 @@ const loginSchema = z.object({
 
 type LoginData = z.infer<typeof loginSchema>;
 
-const CustomInput = forwardRef((props, ref) => <input ref={ref} {...props} />);
-
-CustomInput.displayName = "CustomInput";
-
 const Login: React.FC = () => {
   const {
     register,
@@ -27,9 +23,7 @@ const Login: React.FC = () => {
     resolver: zodResolver(loginSchema),
   });
 
-  const onSubmit = (data) => {
-    console.log(data);
-  };
+  const onSubmit = (data: LoginData) => console.log(data);
 
   return (
     <section className="min-h-screen flex flex-col justify-center items-center font-roboto">
@@ -43,7 +37,6 @@ const Login: React.FC = () => {
         >
           <div className="relative w-full">
             <Mail className="absolute left-3 top-5 text-red" size={20} />
-            {/* <CustomInput {...register("email")} placeholder="Enter your name" autoFocus /> */}
             <Input
               name="email"
               placeholder="Seu email"
